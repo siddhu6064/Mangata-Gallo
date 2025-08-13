@@ -1,0 +1,489 @@
+/* Atelier Page Specific Styles */
+
+/* Banner Section - Like Homepage */
+.atelier-banner {
+    background: linear-gradient(135deg, rgba(26,26,26,0.8), rgba(44,44,44,0.6));
+    border-radius: 0.9375rem;
+    margin-bottom: 1.875rem;
+    min-height: 25rem;
+    display: flex;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1.5625rem rgba(0,0,0,0.15);
+}
+
+.banner-overlay {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    padding: 3rem;
+    gap: 3rem;
+    color: white;
+}
+
+.banner-text {
+    flex: 1.2;
+    color: white;
+}
+
+.banner-text h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.8rem;
+    margin-bottom: 1.25rem;
+    color: #d4af37;
+    text-shadow: 0.125rem 0.125rem 0.25rem rgba(0,0,0,0.5);
+    font-weight: bold;
+}
+
+.banner-text p {
+    font-size: 1.2rem;
+    line-height: 1.6;
+    color: #f5f5f5;
+}
+
+.cta-button {
+    position: relative;
+    margin-top: 1.5rem;
+    flex-shrink: 0;
+    flex: 0.8;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.cta-button img {
+    width: 100%;
+    max-width: 30rem;
+    min-width: 20rem;
+    height: auto;
+    min-height: 15rem;
+    object-fit: cover;
+    border-radius: 0.625rem;
+    box-shadow: 0 0.5rem 1.25rem rgba(0,0,0,0.3);
+}
+
+.cta-button a {
+    display: inline-block;
+    background: linear-gradient(45deg, #d4af37, #f4d03f);
+    color: #1a1a1a;
+    padding: 0.875rem 2rem;
+    text-decoration: none;
+    border-radius: 1.5625rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+    box-shadow: 0 0.3125rem 0.9375rem rgba(212, 175, 55, 0.3);
+    position: absolute;
+    bottom: -1.25rem;
+    left: 50%;
+    transform: translateX(-50%);
+    white-space: nowrap;
+    z-index: 10;
+}
+
+.cta-button a:hover {
+    transform: translate(-50%, -0.125rem);
+    box-shadow: 0 0.5rem 1.5625rem rgba(212, 175, 55, 0.4);
+}
+
+/* Crafting Intro Section */
+.crafting-intro {
+    background: linear-gradient(135deg, #f8f6f0, #e8e4d8);
+    padding: 3rem 2rem;
+    border-radius: 0.9375rem;
+    margin-bottom: 3rem;
+    text-align: center;
+}
+
+.intro-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+}
+
+.intro-content p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+/* Design Process Section */
+.design-process {
+    margin-bottom: 3rem;
+}
+
+.design-process h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.process-row {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.process-column {
+    background: white;
+    border-radius: 0.9375rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.process-column:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2.5rem rgba(0,0,0,0.15);
+}
+
+.process-image {
+    height: 12rem;
+    overflow: hidden;
+    position: relative;
+}
+
+.process-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.process-column:hover .process-image img {
+    transform: scale(1.05);
+}
+
+.process-content {
+    padding: 1.5rem;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.process-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.4rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+.process-content h3::after {
+    content: '';
+    position: absolute;
+    bottom: -0.25rem;
+    left: 0;
+    width: 2rem;
+    height: 0.125rem;
+    background: linear-gradient(45deg, #d4af37, #f4d03f);
+}
+
+.process-content p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin-bottom: 1.5rem;
+    flex-grow: 1;
+}
+
+.process-link {
+    color: #d4af37;
+    text-decoration: none;
+    font-weight: bold;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-block;
+    position: relative;
+    margin-top: auto;
+}
+
+.process-link::after {
+    content: '→';
+    margin-left: 0.3125rem;
+    transition: margin-left 0.3s ease;
+}
+
+.process-link:hover::after {
+    margin-left: 0.625rem;
+}
+
+.process-link:hover {
+    color: #1a1a1a;
+}
+
+/* Existing styles for other sections remain the same */
+.specialization {
+    margin-bottom: 4rem;
+}
+
+.specialization h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.specialization-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+    gap: 2rem;
+}
+
+.specialty-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.specialty-item:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2.5rem rgba(0,0,0,0.15);
+}
+
+.specialty-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.specialty-item p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Atelier Values Section */
+.atelier-values {
+    background: linear-gradient(135deg, #f8f6f0, #e8e4d8);
+    padding: 3rem;
+    border-radius: 0.9375rem;
+    margin-bottom: 4rem;
+}
+
+.values-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+}
+
+.value-item {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.value-item:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2.5rem rgba(0,0,0,0.15);
+}
+
+.value-item h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.value-item p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+/* Consultation Booking Section */
+.consultation-booking {
+    background: white;
+    padding: 3rem;
+    border-radius: 0.9375rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.1);
+}
+
+.booking-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.booking-content > p {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.consultation-info {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 2rem;
+    margin-bottom: 3rem;
+}
+
+.info-item {
+    background: #f8f6f0;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    border-left: 0.25rem solid #d4af37;
+}
+
+.info-item h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1a1a1a;
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.info-item p {
+    color: #666;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+/* Consultation Form */
+.consultation-form {
+    max-width: 40rem;
+    margin: 0 auto;
+}
+
+.form-row {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    margin-bottom: 1rem;
+}
+
+.consultation-form input,
+.consultation-form select,
+.consultation-form textarea {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid #ddd;
+    border-radius: 0.5rem;
+    font-family: 'Lora', serif;
+    transition: border-color 0.3s ease;
+}
+
+.consultation-form input:focus,
+.consultation-form select:focus,
+.consultation-form textarea:focus {
+    outline: none;
+    border-color: #d4af37;
+    box-shadow: 0 0 0.5rem rgba(212, 175, 55, 0.2);
+}
+
+.consultation-form textarea {
+    resize: vertical;
+    margin-bottom: 1rem;
+}
+
+.submit-consultation-btn {
+    width: 100%;
+    background: linear-gradient(45deg, #d4af37, #f4d03f);
+    color: #1a1a1a;
+    border: none;
+    padding: 1rem 2rem;
+    border-radius: 0.5rem;
+    font-weight: bold;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    margin-top: 1rem;
+}
+
+.submit-consultation-btn:hover {
+    transform: translateY(-0.125rem);
+    box-shadow: 0 0.5rem 1.5rem rgba(212, 175, 55, 0.4);
+}
+
+/* Mobile Responsive */
+@media (max-width: 64rem) {
+    .banner-overlay {
+        flex-direction: column;
+        text-align: center;
+        gap: 1.875rem;
+    }
+    
+    .cta-button a {
+        position: relative;
+        bottom: auto;
+        left: auto;
+        transform: none;
+        margin-top: 1.25rem;
+    }
+}
+
+@media (max-width: 48rem) {
+    .banner-overlay {
+        padding: 2rem 1rem;
+    }
+
+    .banner-text h1 {
+        font-size: 2.2rem;
+    }
+
+    .process-row {
+        grid-template-columns: 1fr;
+        gap: 1.5rem;
+    }
+
+    .specialization-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .consultation-info {
+        grid-template-columns: 1fr;
+    }
+
+    .form-row {
+        grid-template-columns: 1fr;
+    }
+
+    .crafting-intro,
+    .atelier-values,
+    .consultation-booking {
+        padding: 2rem 1rem;
+    }
+
+    .intro-content h2,
+    .values-content h2,
+    .booking-content h2 {
+        font-size: 2rem;
+    }
+}
