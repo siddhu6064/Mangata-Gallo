@@ -1,0 +1,391 @@
+/* About Page Specific Styles */
+
+.about-hero {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+    align-items: center;
+    margin-bottom: 4rem;
+    padding: 2rem;
+    background: linear-gradient(135deg, #f8f6f0, #e8e4d8);
+    border-radius: 0.9375rem;
+}
+
+.hero-content h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 3.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.hero-content p {
+    font-size: 1.3rem;
+    color: #666;
+    font-style: italic;
+}
+
+.hero-image {
+    border-radius: 0.9375rem;
+    overflow: hidden;
+    box-shadow: 0 1rem 3rem rgba(0,0,0,0.15);
+}
+
+.hero-image img {
+    width: 100%;
+    height: 25rem;
+    object-fit: cover;
+}
+
+.history-section {
+    margin-bottom: 4rem;
+}
+
+.history-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.timeline {
+    position: relative;
+    max-width: 50rem;
+    margin: 0 auto;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    bottom: 0;
+    width: 0.125rem;
+    background: linear-gradient(to bottom, #d4af37, #f4d03f);
+    transform: translateX(-50%);
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.timeline-item:nth-child(odd) {
+    flex-direction: row;
+}
+
+.timeline-item:nth-child(even) {
+    flex-direction: row-reverse;
+}
+
+.timeline-year {
+    background: linear-gradient(45deg, #d4af37, #f4d03f);
+    color: #1a1a1a;
+    padding: 1rem 1.5rem;
+    border-radius: 2rem;
+    font-weight: bold;
+    font-size: 1.2rem;
+    min-width: 8rem;
+    text-align: center;
+    z-index: 2;
+    position: relative;
+}
+
+.timeline-content {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.1);
+    flex: 1;
+    margin: 0 2rem;
+}
+
+.timeline-content h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.5rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.timeline-content p {
+    color: #666;
+    line-height: 1.6;
+}
+
+.mariana-section {
+    background: white;
+    padding: 3rem;
+    border-radius: 0.9375rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.1);
+}
+
+.mariana-content {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 3rem;
+    align-items: center;
+}
+
+.mariana-image {
+    border-radius: 0.75rem;
+    overflow: hidden;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.15);
+}
+
+.mariana-image img {
+    width: 100%;
+    height: 20rem;
+    object-fit: cover;
+}
+
+.mariana-text h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.2rem;
+    color: #1a1a1a;
+    margin-bottom: 1.5rem;
+}
+
+.mariana-text p {
+    color: #666;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.mariana-text blockquote {
+    background: #f8f6f0;
+    padding: 1.5rem;
+    border-left: 0.25rem solid #d4af37;
+    font-style: italic;
+    color: #555;
+    margin: 2rem 0;
+    border-radius: 0.5rem;
+}
+
+.values-section {
+    margin-bottom: 4rem;
+}
+
+.values-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.values-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(15rem, 1fr));
+    gap: 2rem;
+}
+
+.value-card {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+    transition: all 0.3s ease;
+}
+
+.value-card:hover {
+    transform: translateY(-0.5rem);
+    box-shadow: 0 1rem 2.5rem rgba(0,0,0,0.15);
+}
+
+.value-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+    display: block;
+}
+
+.value-card h3 {
+    font-family: 'Playfair Display', serif;
+    font-size: 1.3rem;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+}
+
+.value-card p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+}
+
+.visit-section {
+    background: linear-gradient(135deg, #f8f6f0, #e8e4d8);
+    padding: 3rem;
+    border-radius: 0.9375rem;
+    margin-bottom: 4rem;
+}
+
+.visit-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.visit-content p {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.location-details {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(12rem, 1fr));
+    gap: 2rem;
+}
+
+.detail-item {
+    background: white;
+    padding: 1.5rem;
+    border-radius: 0.75rem;
+    text-align: center;
+    box-shadow: 0 0.25rem 1rem rgba(0,0,0,0.1);
+}
+
+.detail-item h3 {
+    font-family: 'Playfair Display', serif;
+    color: #1a1a1a;
+    margin-bottom: 1rem;
+    font-size: 1.2rem;
+}
+
+.detail-item p {
+    color: #666;
+    line-height: 1.6;
+    font-size: 0.95rem;
+    margin: 0;
+}
+
+.reservation-section {
+    background: white;
+    padding: 3rem;
+    border-radius: 0.9375rem;
+    margin-bottom: 4rem;
+    box-shadow: 0 0.5rem 2rem rgba(0,0,0,0.1);
+}
+
+.reservation-content h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.reservation-content > p {
+    text-align: center;
+    color: #666;
+    font-size: 1.1rem;
+    margin-bottom: 3rem;
+    max-width: 40rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.testimonials-section {
+    margin-bottom: 4rem;
+}
+
+.testimonials-section h2 {
+    font-family: 'Playfair Display', serif;
+    font-size: 2.5rem;
+    color: #1a1a1a;
+    text-align: center;
+    margin-bottom: 3rem;
+}
+
+.testimonials-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+    gap: 2rem;
+}
+
+.testimonial {
+    background: white;
+    padding: 2rem;
+    border-radius: 0.75rem;
+    box-shadow: 0 0.5rem 1.5rem rgba(0,0,0,0.1);
+    text-align: center;
+}
+
+.testimonial blockquote {
+    font-style: italic;
+    color: #555;
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+    font-size: 1rem;
+}
+
+.testimonial cite {
+    color: #d4af37;
+    font-weight: bold;
+    font-style: normal;
+}
+
+/* Mobile Responsive */
+@media (max-width: 48rem) {
+    .about-hero {
+        grid-template-columns: 1fr;
+        text-align: center;
+    }
+    
+    .hero-content h1 {
+        font-size: 2.5rem;
+    }
+    
+    .timeline::before {
+        left: 1rem;
+    }
+    
+    .timeline-item {
+        flex-direction: column !important;
+        align-items: flex-start;
+        margin-left: 2rem;
+    }
+    
+    .timeline-year {
+        margin-bottom: 1rem;
+        min-width: auto;
+    }
+    
+    .timeline-content {
+        margin: 0;
+    }
+    
+    .mariana-content {
+        grid-template-columns: 1fr;
+    }
+    
+    .mariana-text h2 {
+        font-size: 1.8rem;
+    }
+    
+    .values-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .location-details {
+        grid-template-columns: 1fr;
+    }
+    
+    .testimonials-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .visit-section,
+    .reservation-section {
+        padding: 2rem 1rem;
+    }
+}
